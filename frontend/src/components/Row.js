@@ -37,6 +37,7 @@ const Row = ({ row, isKeyboard, unusedLetters, classRow, handleKeyDown, thisRow,
                             <motion.div
                                 key={idx}
                                 className={`tile tile-colored tile-small ${classRow[idx]}`}
+                                initial={false}
                                 animate={{
                                     scale: [1, 1.1, 1],
                                     backgroundColor: [colors[classRow[idx]].before, colors[classRow[idx]].after],
@@ -63,18 +64,3 @@ const Row = ({ row, isKeyboard, unusedLetters, classRow, handleKeyDown, thisRow,
 }
 
 export default Row
-
-/*!isKeyboard
-                    ? thisRow !== getRowAndCol(totalProgress).row
-                        ? <Tile
-                            key={idx}
-                            char={char}
-                            grayOut={isKeyboard && unusedLetters.includes(char)}
-                            color={isKeyboard ? "" : classRow[idx]}
-                            isKeyboard={isKeyboard}
-                            handleKeyDown={handleKeyDown} />
-                        : <motion.div
-                            key={idx}
-                            className={`tile tile-colored tile-small ${classRow[idx]}`}
-                            animate={{ scale: [1, 1.1, 1] }}
-                            transition={{ duration: .25, delay: idx * .15 }}>{char}</motion.div>*/
