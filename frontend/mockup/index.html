@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Wordle</title>
+</head>
+
+<body>
+
+    <!-- GAME OVER SCREEN
+    <div class="pause-background">
+        <div class="pause-content dialogue">
+            <h2 class="game-over-heading">No success this time!<br> The word was:</h2>
+            <div class="row game-over-row">
+                <div class="tile tile-small tile-filled tile-colored green">T</div>
+                <div class="tile tile-small tile-filled tile-colored green">R</div>
+                <div class="tile tile-small tile-filled tile-colored green">A</div>
+                <div class="tile tile-small tile-filled tile-colored green">I</div>
+                <div class="tile tile-small tile-filled tile-colored green">N</div>
+            </div>
+            <h2 class="game-over-heading">Statistics</h2>
+            <div class="statistics-row">
+                <div class="statistics-column">
+                    <h3 class="statistic">4</h3>
+                    <p class="statistic-text">Total Attempts</p>
+                </div>
+                <div class="statistics-column">
+                    <h3 class="statistic">50%</h3>
+                    <p class="statistic-text">Success Rate</p>
+                </div>
+                <div class="statistics-column">
+                    <h3 class="statistic">2</h3>
+                    <p class="statistic-text">Current Streak</p>
+                </div>
+            </div>
+            <button class=" btn">Play Again</button>
+        </div>
+    </div>
+    -->
+
+    <!-- ABOUT SCREEN
+    <div class="pause-background">
+        <div class="pause-content dialogue">
+            <p class="about-desc">This is a replica of the New York Times' word game, <a target="_blank"
+                    href="https://www.nytimes.com/games/wordle/index.html">Wordle</a>. I made it to practice my
+                programming skills. The <a href="">frontend</a> is made in React and the <a href="">backend</a> in
+                Express/Node. Get to know mere <a href="">here.</a></p>
+            <button class="btn">Close</button>
+        </div>
+    </div>
+    -->
+
+    <!-- START SCREEN
+    <div class="pause-background">
+        <div class="pause-content">
+            <h1 class="start-screen-heading">WORDLE</h1>
+            <p class="start-screen-desc">Get 6 chances to guess a 5-letter word.</p>
+            <button class="btn">Play</button>
+            <p class="date">January 16, 2024</p>
+        </div>
+    </div>
+    -->
+
+    <main class="app">
+        <nav class="nav-bar">
+            <ul class="nav-list nav-list-outer">
+                <li class="nav-item">?</li>
+                <li class="nav-item">WORDLE</li>
+                <li class="nav-item">X</li>
+            </ul>
+        </nav>
+
+        <div class="board">
+            <div class="row">
+                <div class="tile tile-small tile-filled tile-colored green">T</div>
+                <div class="tile tile-small tile-filled tile-colored orange">R</div>
+                <div class="tile tile-small tile-filled tile-colored gray">A</div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+            </div>
+            <div class="row">
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+            </div>
+            <div class="row">
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+            </div>
+            <div class="row">
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+            </div>
+            <div class="row">
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+            </div>
+            <div class="row">
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+                <div class="tile tile-small"></div>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="row">
+                <div class="tile tile-small tile-filled">Q</div>
+                <div class="tile tile-small tile-filled">W</div>
+                <div class="tile tile-small tile-filled">E</div>
+                <div class="tile tile-small tile-filled">R</div>
+                <div class="tile tile-small tile-filled">T</div>
+                <div class="tile tile-small tile-filled">Y</div>
+                <div class="tile tile-small tile-filled">U</div>
+                <div class="tile tile-small tile-filled">I</div>
+                <div class="tile tile-small tile-filled">O</div>
+                <div class="tile tile-small tile-filled">P</div>
+            </div>
+            <div class="row">
+                <div class="tile tile-small tile-filled">A</div>
+                <div class="tile tile-small tile-filled">S</div>
+                <div class="tile tile-small tile-filled">D</div>
+                <div class="tile tile-small tile-filled">F</div>
+                <div class="tile tile-small tile-filled">G</div>
+                <div class="tile tile-small tile-filled">H</div>
+                <div class="tile tile-small tile-filled">J</div>
+                <div class="tile tile-small tile-filled">K</div>
+                <div class="tile tile-small tile-filled">L</div>
+            </div>
+            <div class="row">
+                <div class="tile tile-big tile-filled">ENTER</div>
+                <div class="tile tile-small tile-filled">Z</div>
+                <div class="tile tile-small tile-filled">C</div>
+                <div class="tile tile-small tile-filled">V</div>
+                <div class="tile tile-small tile-filled">B</div>
+                <div class="tile tile-small tile-filled">N</div>
+                <div class="tile tile-small tile-filled">M</div>
+                <div class="tile tile-big tile-filled">BACKSPACE</div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
