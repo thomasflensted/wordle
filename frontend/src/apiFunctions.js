@@ -4,7 +4,7 @@ export function getRandomWord(arr) {
 }
 
 export function generateURL(ext) {
-    const baseURL = "https://wordle-api-6ijq.onrender.com/";
+    const baseURL = "https://wordle-api-ofuo.onrender.com/";
     const extension = ext;
     return `${baseURL}${extension}`;
 }
