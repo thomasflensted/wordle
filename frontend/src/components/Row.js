@@ -37,7 +37,6 @@ const Row = ({ row, isKeyboard, unusedLetters, classRow, handleKeyDown, thisRow,
                             <motion.div
                                 key={idx}
                                 className={`tile tile-colored tile-small ${classRow[idx]}`}
-                                initial={false}
                                 animate={{
                                     scale: [1, 1.1, 1],
                                     backgroundColor: [colors[classRow[idx]].before, colors[classRow[idx]].after],
